@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpDynamic", "CSharpDyna
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpScriptEngine", "CSharpScriptEngine\CSharpScriptEngine.csproj", "{125865AF-593F-40A3-BCE0-C1510166AF34}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpIpyDotNet", "CSharpIpyDotNet\CSharpIpyDotNet.csproj", "{16427272-E160-45FA-841A-0DE52B56A5EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{125865AF-593F-40A3-BCE0-C1510166AF34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{125865AF-593F-40A3-BCE0-C1510166AF34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{125865AF-593F-40A3-BCE0-C1510166AF34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16427272-E160-45FA-841A-0DE52B56A5EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16427272-E160-45FA-841A-0DE52B56A5EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16427272-E160-45FA-841A-0DE52B56A5EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16427272-E160-45FA-841A-0DE52B56A5EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
