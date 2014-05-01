@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpScriptEngine", "CShar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpIpyDotNet", "CSharpIpyDotNet\CSharpIpyDotNet.csproj", "{16427272-E160-45FA-841A-0DE52B56A5EA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpIpyAssy", "CSharpIpyAssy\CSharpIpyAssy.csproj", "{D4AD8B7F-1DD8-47A0-BB76-6D397ED67CDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkTasks", "WorkTasks\WorkTasks.csproj", "{DF3BAA3C-F0B8-4A02-B405-ABDDCDE35077}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{16427272-E160-45FA-841A-0DE52B56A5EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16427272-E160-45FA-841A-0DE52B56A5EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16427272-E160-45FA-841A-0DE52B56A5EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4AD8B7F-1DD8-47A0-BB76-6D397ED67CDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4AD8B7F-1DD8-47A0-BB76-6D397ED67CDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4AD8B7F-1DD8-47A0-BB76-6D397ED67CDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4AD8B7F-1DD8-47A0-BB76-6D397ED67CDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF3BAA3C-F0B8-4A02-B405-ABDDCDE35077}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF3BAA3C-F0B8-4A02-B405-ABDDCDE35077}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF3BAA3C-F0B8-4A02-B405-ABDDCDE35077}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF3BAA3C-F0B8-4A02-B405-ABDDCDE35077}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
