@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.30110.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpDynamic", "CSharpDynamic\CSharpDynamic.csproj", "{78A518CB-4F08-440E-A554-56983AA894A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpScriptEngine", "CSharpScriptEngine\CSharpScriptEngine.csproj", "{125865AF-593F-40A3-BCE0-C1510166AF34}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{78A518CB-4F08-440E-A554-56983AA894A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78A518CB-4F08-440E-A554-56983AA894A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78A518CB-4F08-440E-A554-56983AA894A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{125865AF-593F-40A3-BCE0-C1510166AF34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{125865AF-593F-40A3-BCE0-C1510166AF34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{125865AF-593F-40A3-BCE0-C1510166AF34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{125865AF-593F-40A3-BCE0-C1510166AF34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
