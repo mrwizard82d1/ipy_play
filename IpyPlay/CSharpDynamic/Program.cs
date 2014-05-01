@@ -1,11 +1,11 @@
 ﻿using System;
 using IronPython.Hosting;
 
-namespace CSharpCallsIpy
+namespace CSharpDynamic
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             var ipyRuntime = Python.CreateRuntime();
             dynamic test = ipyRuntime.UseFile("simple.py");
