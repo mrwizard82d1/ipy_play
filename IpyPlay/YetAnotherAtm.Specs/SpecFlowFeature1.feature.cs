@@ -72,7 +72,7 @@ namespace YetAnotherAtm.Specs
 #line 6
 this.ScenarioSetup(scenarioInfo);
 #line 7
- testRunner.Given("I have deposited $100 in my account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I have $100 in my account", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 8
  testRunner.When("I request $20", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 9

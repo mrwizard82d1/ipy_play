@@ -1,13 +1,11 @@
-import clr
-clr.AddReferenceToFileAndPath('Atm.dll')
-from Atm import AccountNumber
+# import clr
+# clr.AddReferenceToFileAndPath('Atm.dll')
+import Atm
 
 __author__ = 'l.jones'
 
 
-def create_account(account_number_text):
-    """Create an account from account_number_text."""
-    is_parsed, account_number = AccountNumber.TryParse(account_number_text)
-    return is_parsed, account_number
-
+def create_account(account_number, opening_balance):
+    """Create an account from account_number and opening_balance."""
+    return Atm.Account(account_number, opening_balance)
 

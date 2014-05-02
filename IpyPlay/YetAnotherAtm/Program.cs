@@ -5,27 +5,26 @@ namespace YetAnotherAtm
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            var accountNumber = GetAccountNumber();
-            if (accountNumber != null)
+            var account = GetAccount();
+            if (account != null)
             {
-                ExecuteTransactions(accountNumber);              
+                ExecuteTransactions(account);              
             }
         }
 
-        private static void ExecuteTransactions(AccountNumber accountNumber)
+        private static void ExecuteTransactions(Account account)
         {
+            Console.WriteLine(account); // eliminates warning
             throw new NotImplementedException();
         }
 
-        private static AccountNumber GetAccountNumber()
+        private static Account GetAccount()
         {
             Console.Write("Account? ");
             string accountNumberText = Console.ReadLine();
-            AccountNumber accountNumber = null;
-            AccountNumber.TryParse(accountNumberText, out accountNumber);
-            return accountNumber;
+            return new Account(accountNumberText);
         }
     }
 }

@@ -13,35 +13,28 @@ namespace YetAnotherAtm.Specs
     [Binding]
     public class CashWithdrawalSteps
     {
-        private AccountNumber _accountNumber;
-        private readonly string _accountNumberText;
+        private Account _account;
+        private readonly string _accountNumber;
 
         private readonly dynamic _steps;
 
         public CashWithdrawalSteps()
         {
-            ScriptRuntime ipyRuntime = Python.CreateRuntime();
+            var ipyRuntime = Python.CreateRuntime();
+            ipyRuntime.LoadAssembly(typeof(Account).Assembly);
+
             _steps = ipyRuntime.UseFile("cash_withdrawal_steps.py");
 
-            _accountNumberText = "125009";
+            _accountNumber = "125009";
         }
 
-        [Given(@"I have deposited \$(.*) in my account")]
-        public void GivenIHaveDepositedInMyAccount(int depositAmount)
+        [Given(@"I have \$(.*) in my account")]
+        public void GivenIHaveInMyAccount(decimal openingBalance)
         {
-            var createResult = _steps.create_account(_accountNumberText);
-            var results= new List<object>();
-            foreach (var result in createResult)
-            {
-                results.Add(result);
-            }
-            Assert.AreEqual(true, results[0]);
-            _accountNumber = (AccountNumber) results[1];
-            var depositTransaction =
-                _steps.create_deposit(_accountNumber,
-                                      depositAmount.ToString(
-                                          CultureInfo.InvariantCulture));
-            _steps.execute_transaction(depositTransaction);
+            _account = _steps.create_account(_accountNumber,
+                                             openingBalance);
+            Assert.AreEqual(_accountNumber, _account.AccountNumber);
+            Assert.AreEqual(openingBalance, _account.Balance);
         }
 
         [When(@"I request \$(.*)")]
