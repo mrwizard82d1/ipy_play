@@ -5,18 +5,18 @@ from WorkTasks import WorkTask
 
 cut_start = DateTimeOffset(1997, 3, 3, 15, 31, 34, 361, TimeSpan.FromMinutes(500))
 cut_details = "artio"
-cut = WorkTask(cut_start, cut_details)
+account = WorkTask(cut_start, cut_details)
 
 cut_duration = TimeSpan.FromSeconds(25570)
-cut.Duration = cut_duration
+account.Duration = cut_duration
 
 abutting_task = WorkTask(cut_start + cut_duration, "corollarii")
 not_abutting_task = WorkTask (cut_start + cut_duration + TimeSpan.FromTicks(1), "poenae")
 
 def test_abutting():
     "Do two WorkTasks abut?"
-    return cut.IsAbutting(abutting_task)
+    return account.IsAbutting(abutting_task)
 
 def test_not_abutting():
     "Do two WorkTasks NOT abut?"
-    return cut.IsAbutting(not_abutting_task)
+    return account.IsAbutting(not_abutting_task)

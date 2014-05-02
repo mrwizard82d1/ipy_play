@@ -1,4 +1,6 @@
 ﻿using IronPython.Hosting;
+using NUnit.Framework;
+using NUnit.Framework.Constraints;
 using TechTalk.SpecFlow;
 
 namespace YetAnotherAtm.Specs
@@ -21,15 +23,15 @@ namespace YetAnotherAtm.Specs
         }
 
         [When(@"I request \$(.*)")]
-        public void WhenIRequest(int p0)
+        public void WhenIRequest(decimal amount)
         {
-            ScenarioContext.Current.Pending();
+            _steps.request_cash_withdrawal(amount);
         }
 
         [Then(@"I see \$(.*) dispensed")]
-        public void ThenISeeDispensed(int p0)
+        public void ThenISeeDispensed(decimal dispensed)
         {
-            ScenarioContext.Current.Pending();
+            Assert.AreEqual(dispensed, _steps.cash_dispensed);
         }
     }
 }
